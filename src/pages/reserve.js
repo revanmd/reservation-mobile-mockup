@@ -22,7 +22,7 @@ export default function Reserve() {
                 className="px-7 mt-3"
             >
                 <Form.Item
-                    name="tempat"
+                    name="lokasi"
                     label="Lokasi Sewa"
                     rules={[
                         {
@@ -100,6 +100,7 @@ export default function Reserve() {
                         }}
                         className="w-full"
                         placeholder="Pilih jam"
+                        format="HH:00"
                     />
                 </Form.Item>
 
@@ -111,7 +112,7 @@ export default function Reserve() {
                         type="secondary"
                         htmlType="submit"
                     >
-                        Lanjutkan
+                        LANJUTKAN
                     </Button>
                 </Form.Item>
             </Form>

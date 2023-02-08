@@ -4,7 +4,7 @@ import ListSchedule from "@/components/schedule/list";
 export default function Schedules() {
     return (
         <UserLayout
-            backward="/"
+            backward="/reserve"
             title="Pilih jadwal"
         >
             <div
