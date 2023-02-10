@@ -1,4 +1,5 @@
 import UserLayout from "@/components/layout";
+import TableSchedule from "@/components/schedule/table";
 import { DiffTwoTone, ProfileTwoTone, MessageTwoTone } from "@ant-design/icons";
 import { useRouter } from "next/router";
 
@@ -8,11 +9,21 @@ export default function Home() {
   return (
     <>
       <UserLayout>
-        <div className="my-5 grid grid-cols-6 px-6">
-          <div className="col-span-1 container p-2 bg-slate-800 text-white text-center rounded-full w-10">
+        <div className="my-5 ml-10">
+          <div className="container p-2 bg-slate-800 text-white text-center rounded-full w-10"
+            style={{
+              display: 'inline-block'
+            }}
+          >
             R
           </div>
-          <div className="col-span-5 mt-1">
+          <div className="mt-1 ml-3"
+            style={{
+              display: 'inline-block',
+              position: 'relative',
+              top: '10px'
+            }}
+          >
             <div className="text-sm">
               Revan Muhammad Dafa
             </div>
@@ -24,7 +35,7 @@ export default function Home() {
 
         <div className="grid grid-cols-3 text-center border-solid border-y py-7 text-gray-400">
           <div
-            onClick={()=>{
+            onClick={() => {
               Router.push("/reserve")
             }}
           >
@@ -49,12 +60,25 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="px-6 py-2">
-          <div className="font-semibold text-sm mt-2">
-            News & Events
+        <div
+          className="grid grid-cols-3"
+        >
+          <div className="col-span-3 lg:col-span-1 px-6 py-2">
+            <div className="font-semibold text-sm mt-2">
+              News & Events
+            </div>
+            <div className="mt-3 shadow-lg w-full h-52 bg-[url('https://web.aotransportbus.com/uploads/slider/slider20220425124158.jpg')] bg-cover">
+
+            </div>
           </div>
-          <div className="mt-3 shadow-lg w-full h-52 bg-[url('https://web.aotransportbus.com/uploads/slider/slider20220425124158.jpg')] bg-cover">
-            
+          <div className="col-span-3 lg:col-span-2 px-6 py-2">
+            <div className="font-semibold text-sm mt-2">
+              Jadwal
+            </div>
+            <div className="mt-3 shadow-lg w-full h-52 bg-cover">
+              <TableSchedule/>
+
+            </div>
           </div>
         </div>
 

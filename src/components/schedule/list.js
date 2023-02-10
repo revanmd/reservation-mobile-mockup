@@ -1,10 +1,6 @@
-import { useRouter } from "next/router";
 import ListItemSchedule from "./item";
 
-
 export default function ListSchedule() {
-    const Router = useRouter()
-
     return (
         <>
             {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => {
@@ -16,10 +12,7 @@ export default function ListSchedule() {
                         type="Lapangan Finyl"
                         cost="200000"
                         
-                        onClick={()=>{
-                            alert('hello')
-                            Router.push("/buyer")
-                        }}
+                        
                     />
                 )
             })}

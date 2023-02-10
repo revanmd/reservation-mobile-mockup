@@ -1,22 +1,54 @@
+import { useWindowSize } from "@/hooks/useWindowsSize";
 import Footer from "./footer";
 import Header from "./header";
+import Sider from "./sider";
+
+
+
 
 export default function UserLayout({ children, backward, title }) {
+    const size = useWindowSize()
 
-    return (
-        <>
-            <Header
-                backward={backward}
-                title={title}
-            />
+    if (size.width > 600) {
+        return (
+            <div>
+                <Header
+                    backward={backward}
+                    title={title}
+                />
 
-            <div className="mt-16">
-                {children}
+                <div 
+                    className="mt-16"
+                    style={{
+                        marginLeft:'100px'
+                    }}
+                >
+                    {children}
+                </div>
+
+                <Sider />
             </div>
+        )
+    }
+    else {
+        return (
+            <div>
+                <Header
+                    backward={backward}
+                    title={title}
+                />
 
-            <Footer />
+                <div className="mt-16">
+                    {children}
+                </div>
+
+                <Footer />
+            </div>
+        )
+    }
 
 
-        </>
-    )
+
+
+
 }
