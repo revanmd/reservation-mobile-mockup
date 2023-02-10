@@ -15,6 +15,7 @@ export default function Buyer() {
             title="Pemesan"
         >
             <Form
+                labelCol={{ span: 4 }}
                 onFinish={onFinish}
                 size="large"
                 className="px-7 mt-3"

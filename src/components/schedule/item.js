@@ -11,7 +11,7 @@ export default function ListItemSchedule({ field, time, type, cost }) {
                 Router.push("/buyer")
             }}
         >
-            <div className="grid grid-cols-10 pb-4 pt-4">
+            <div className="grid grid-cols-10 pb-4 pt-4 cursor-pointer">
                 <div className="col-span-6">
                     <div className="text-sm">{field}</div>
                     <div className="text-sm text-gray-400">{time}</div>

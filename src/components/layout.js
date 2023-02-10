@@ -18,9 +18,9 @@ export default function UserLayout({ children, backward, title }) {
                 />
 
                 <div 
-                    className="mt-16"
+                    className="mt-16 pt-1"
                     style={{
-                        marginLeft:'100px'
+                        marginLeft:'120px'
                     }}
                 >
                     {children}

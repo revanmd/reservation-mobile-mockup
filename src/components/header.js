@@ -6,7 +6,8 @@ export default function Header({backward, title}){
             <div
                 className='fixed top-0 py-4 bg-slate-800 text-center text-white text-bold w-full'
                 style={{
-                    zIndex:9999
+                    zIndex:9999,
+                    left:'65px'
                 }}
             >
                 <div className='fixed left-6 top-3'>
@@ -27,6 +28,10 @@ export default function Header({backward, title}){
         return (
             <div
                 className='fixed top-0 py-4 bg-slate-800 text-center text-white text-bold w-full'
+                style={{
+                    zIndex:9999,
+                    left:'65px'
+                }}
             >
                 <b>Logo Reservation</b>
             </div>

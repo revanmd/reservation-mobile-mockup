@@ -1,19 +1,31 @@
 import { HomeOutlined, UserOutlined, HistoryOutlined, SettingOutlined } from '@ant-design/icons';
+import Link from 'next/link';
 
 export default function Sider() {
     return (
         <div
             className="fixed top-0 grid grid-rows-4 h-full items-center text-center bg-white p-5 shadow-lg"
+            style={{
+                zIndex:9999
+            }}
         >
-            <div>
-                <HomeOutlined />
+            <Link
+                href="/"
+            >
                 <div
-                    className='text-xs my-2'
+                    className='cursor-pointer'
                 >
-                    Beranda
+                    <HomeOutlined />
+                    <div
+                        className='text-xs my-2'
+                    >
+                        Beranda
+                    </div>
                 </div>
-            </div>
-            <div>
+            </Link>
+            <div
+                className='cursor-pointer'
+            >
                 <UserOutlined />
                 <div
                     className='text-xs my-2'
@@ -21,7 +33,9 @@ export default function Sider() {
                     Profil
                 </div>
             </div>
-            <div>
+            <div
+                className='cursor-pointer'
+            >
                 <HistoryOutlined />
                 <div
                     className='text-xs my-2'
@@ -29,7 +43,9 @@ export default function Sider() {
                     Riwayat
                 </div>
             </div>
-            <div>
+            <div
+                className='cursor-pointer'
+            >
                 <SettingOutlined />
                 <div
                     className='text-xs my-2'

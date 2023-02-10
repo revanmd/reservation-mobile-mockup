@@ -35,6 +35,7 @@ export default function Home() {
 
         <div className="grid grid-cols-3 text-center border-solid border-y py-7 text-gray-400">
           <div
+            className="cursor-pointer"
             onClick={() => {
               Router.push("/reserve")
             }}
@@ -45,14 +46,18 @@ export default function Home() {
             </div>
           </div>
 
-          <div>
+          <div
+            className="cursor-pointer"
+          >
             <ProfileTwoTone twoToneColor={"rgb(14 165 233)"} className="text-4xl" />
             <div className="text-xs mt-3">
               Layanan
             </div>
           </div>
 
-          <div>
+          <div
+            className="cursor-pointer"
+          >
             <MessageTwoTone twoToneColor={"rgb(192 38 211)"} className="text-4xl" />
             <div className="text-xs mt-3">
               Inbox
@@ -67,7 +72,7 @@ export default function Home() {
             <div className="font-semibold text-sm mt-2">
               News & Events
             </div>
-            <div className="mt-3 shadow-lg w-full h-52 bg-[url('https://web.aotransportbus.com/uploads/slider/slider20220425124158.jpg')] bg-cover">
+            <div className="cursor-pointer mt-3 shadow-lg w-full h-52 bg-[url('https://web.aotransportbus.com/uploads/slider/slider20220425124158.jpg')] bg-cover">
 
             </div>
           </div>

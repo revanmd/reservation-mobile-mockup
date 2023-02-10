@@ -17,6 +17,7 @@ export default function Reserve() {
             title="Reservasi"
         >
             <Form
+                labelCol={{ span: 2 }}
                 onFinish={onFinish}
                 size="large"
                 className="px-7 mt-3"
