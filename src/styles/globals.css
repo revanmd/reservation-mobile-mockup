@@ -19,4 +19,7 @@ body {
     .mobile-backward {
         left:150px !important
     }
+    .mobile-pad{
+        padding-top:20px !important
+    }
 }
