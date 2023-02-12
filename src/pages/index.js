@@ -80,8 +80,12 @@ export default function Home() {
             <div className="font-semibold text-sm mt-2">
               Jadwal
             </div>
-            <div className="mt-3 shadow-lg w-full h-52 bg-cover">
-              <TableSchedule/>
+            <div className="mt-3 shadow-lg h-52 bg-cover">
+              <div
+                className="schedule-table-responsive"
+              >
+                <TableSchedule />
+              </div>
 
             </div>
           </div>

@@ -3,11 +3,20 @@
 @tailwind utilities;
 
 
-body{
+body {
     font-family: 'Varela Round', sans-serif;
 }
 
-.table-konfirmasi > tr > td:nth-child(2){
+.table-konfirmasi>tr>td:nth-child(2) {
     padding: 10px;
 }
 
+.schedule-table-responsive {
+    overflow: auto;
+}
+
+@media only screen and (min-width: 600px) {
+    .mobile-backward {
+        left:150px !important
+    }
+}
